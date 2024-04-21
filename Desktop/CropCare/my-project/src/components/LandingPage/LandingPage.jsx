@@ -41,7 +41,7 @@ const LandingPage = () => {
                 <li>
                   <a
                     href="#"
-                    className="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500"
+                    className="block py-2 px-3 text-white md:bg-transparent  md:p-0 dark:text-white "
                     aria-current="page"
                   >
                     Home
@@ -60,7 +60,7 @@ const LandingPage = () => {
                     href="#"
                     className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
                   >
-                    Services
+                    Farming Products
                   </a>
                 </li>
                 <li>
@@ -68,7 +68,7 @@ const LandingPage = () => {
                     href="#"
                     className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
                   >
-                    Pricing
+                    Tutorials
                   </a>
                 </li>
                 <li>
@@ -79,6 +79,7 @@ const LandingPage = () => {
                     Contact
                   </a>
                 </li>
+                <li></li>
               </ul>
             </div>
           </div>
@@ -126,7 +127,42 @@ const LandingPage = () => {
         <button className="bg-green-500 hover:bg-green-700 text-black font-bold py-2 px-8 rounded-full my-14 text-2xl">
           Start Farming
         </button>
-        <div className="flex items-stretch mt-8 ml-20">
+        <h1 className="text-4xl font-bold ml-2 mt-10">About Us</h1>
+        <div className="flex items-stretch mt-16 ml-20">
+          <div className="box-sizing h-[15rem] w-[15rem] p-10 border-4 border-cyan-900 ml-10 rounded-lg">
+            <img
+              src={logo}
+              className="h-[8rem] w-[8rem] ml-2 mb-2"
+              alt="Loading"
+            />
+            <h1 className="ml-2 font-semibold">Atharv powalkar</h1>
+          </div>
+          <div className="box-sizing h-[15rem] w-[15rem] p-10 border-4 border-cyan-900 ml-10 rounded-lg">
+            <img
+              src={logo}
+              className="h-[8rem] w-[8rem] ml-2 mb-2"
+              alt="Loading"
+            />
+            <h1 className="ml-2 font-semibold">Atharv powalkar</h1>
+          </div>
+          <div className="box-sizing h-[15rem] w-[15rem] p-10 border-4 border-cyan-900 ml-10 rounded-lg">
+            <img
+              src={logo}
+              className="h-[8rem] w-[8rem] ml-2 mb-2"
+              alt="Loading"
+            />
+            <h1 className="ml-2 font-semibold">Atharv powalkar</h1>
+          </div>
+          <div className="box-sizing h-[15rem] w-[15rem] p-10 border-4 border-cyan-900 ml-10 rounded-lg">
+            <img
+              src={logo}
+              className="h-[8rem] w-[8rem] ml-2 mb-2"
+              alt="Loading"
+            />
+            <h1 className="ml-2 font-semibold">Atharv powalkar</h1>
+          </div>
+        </div>
+        <div className="flex items-stretch mt-16 ml-20">
           <div className="box-sizing h-[15rem] w-[15rem] p-10 border-4 border-cyan-900 ml-10 rounded-lg">
             <img
               src={logo}
@@ -162,7 +198,9 @@ const LandingPage = () => {
         </div>
 
         <div>
-          <h1 className="mt-20 ml-8 text-6xl font-medium ">Projects and </h1>
+          <h1 className="mt-[12rem] ml-8 text-6xl font-medium ">
+            Projects and{" "}
+          </h1>
           <h1 className="ml-8 text-6xl font-medium">practice</h1>
           <div className="flex items-stretch mt-8 ml-20">
             <div className="max-w-sm rounded overflow-hidden shadow-lg transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 hover:bg-green-300 duration-300 mt-16">
