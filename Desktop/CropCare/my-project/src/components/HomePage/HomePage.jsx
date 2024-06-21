@@ -1,9 +1,10 @@
-import React from "react";
 import logo from "../../assets/crop care.png";
 import plant from "../../assets/plant-svgrepo-com.svg";
 import plant2 from "../../assets/plant-svgrepo-com (4).svg";
-import background from "../../assets/image.png";
-import axios from "react-axios";
+// import background from "../../assets/image.png";
+// import farmingcc from "../../assets/image-with-field-tractor-agricultural-concept.jpg";
+// import axios from "react-axios";
+import { Link } from "react-router-dom";
 const HomePage = () => {
   return (
     <div>
@@ -49,32 +50,46 @@ const HomePage = () => {
         </div>
       </div>
       <div className=" absolute top-0 right-10 items-stretch space-x-4">
-        <button className="bg-white-500  text-black font-semibold py-1 px-7 rounded-lg my-14 text-2xl transition ease-in-out delay-100 hover:-translate-y-1 hover:scale-110 duration-500">
-          Login
-        </button>
-        <button className="bg-green-500  text-white font-semibold py-1 px-7 rounded-lg my-14 text-2xl mr-4 transition ease-in-out delay-100 hover:-translate-y-1 hover:scale-110 duration-500">
-          Sign Up
-        </button>
+        <Link to="/usereg">
+          <button className="bg-green-500  text-white font-semibold py-1 px-7 rounded-lg my-14 text-2xl mr-4 transition ease-in-out delay-100 hover:-translate-y-1 hover:scale-110 duration-500">
+            Register As User
+          </button>
+        </Link>
+
+        <Link to="/farmreg">
+          <button className="bg-green-500  text-white font-semibold py-1 px-7 rounded-lg my-14 text-2xl mr-4 transition ease-in-out delay-100 hover:-translate-y-1 hover:scale-110 duration-500">
+            Farmer
+          </button>
+        </Link>
       </div>
       <div className="absolute top-[10rem] right-[1rem]">
         <img src={logo} className="mt-[2rem] ml-20 w-[34rem] h-[34rem]"></img>
       </div>
-      <div>
-        {/* <h1 className="text-8xl mt-2 text-center mt-12  text-green-700 text-opacity-12 font-bold">
-          CROP CARE
-        </h1> */}
-        {/* <div
-          className="bg-cover bg-center h-screen"
-          style="background-image: url('../../assets/image.png');"
-        ></div> */}{" "}
-      </div>
       {/* <div>
-        <h1 className="text-center mt-12 text-2xl font-semibold">
-          AGRO PRODUCT COMPANY
+        <h1 className="text-8xl mt-2 text-center mt-12  text-green-700 text-opacity-12 font-bold">
+          CROP CARE
         </h1>
       </div> */}
-      {/* <img src={background} className="w-screen h-screen"></img> */}
-      {/* <h1 className="text-6xl drop-shadow-{2xl} mt-6 text-center">URBAN FARMING MADE EASY</h1> */}
+      <div>
+        {/* <h1 className="text-center mt-12 text-2xl font-semibold">
+          AGRO PRODUCT COMPANY
+        </h1> */}
+      </div>
+      {/* <img src={farmingcc} className="w-screen h-screen mt-10"></img> */}
+      <div className="flex items-stretch">
+        <div>
+          <h1 className="text-6xl drop-shadow-{2xl} mt-[12rem] text-left font-bold">
+            URBAN <br></br> FARMING<br></br> MADE EASY
+          </h1>
+        </div>
+        <div>
+          <p className="mt-[12rem] ml-4 text-2xl text-shadow shadow-red-500">
+            With technology-driven solutions, optimizing resources and fostering
+            community engagement for accessible and sustainable gardening in
+            city environments.
+          </p>
+        </div>
+      </div>
     </div>
   );
 };
